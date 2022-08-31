@@ -29,17 +29,17 @@
     padding: 10px;
 }
 .first{
-    height: 400px;
+    height: 350px;
 }
 
 .second{
-    height: 400px;
+    height: 350px;
 }
 .third{
     height: 500px;
 }
 .fourth{
-    height: 500px;
+    height: 450px;
 }
 .rows form label{
     font-size: 30px;
@@ -82,3 +82,23 @@
     font-family: sans-serif;
     color:#fff;
 }
+
+@media screen and (min-device-width: 200px) and (max-device-width: 480px) { 
+       
+.all{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+} 
+}
+
+@media screen and  (min-device-width: 481px) and (max-device-width: 992px){
+    .all{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+    }     
+}
+
+
+        
